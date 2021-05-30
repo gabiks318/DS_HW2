@@ -1,12 +1,11 @@
-// Generic AVL Tree //
-
-#ifndef AVL_TREE_H
-#define AVL_TREE_H
+#ifndef MAIN_CPP_AVLRANKTREE_H
+#define MAIN_CPP_AVLRANKTREE_H
 
 #include "exceptions.h"
 #include <iostream>
 using namespace std;
 
+//----------------------- Generic AVL Tree -----------------------//
 
 template<class T>
 class AVLTree {
@@ -17,6 +16,7 @@ private:
         Node *left;
         Node *father;
         int height;
+        int size;
         T* data;
     };
     Node *root;
@@ -29,10 +29,12 @@ private:
     Node* insertNode(Node *node, Node *target, Node *father);
     Node* findNode(Node *node, const T& data);
     Node* removeNode(Node *node, Node *target);
+    Node* selectNode(Node *node, int index) const;
     Node* getMin(Node *node) const;
     Node* getMax(Node *node) const;
     int balanceFactor(Node *node) const;
     int height(const Node* node) const;
+    int nodeSize(const Node* node) const;
     T* getNodeData(Node* node) const;
 
     // Roll Functions
@@ -52,25 +54,24 @@ private:
 
 public:
     // Constructors, Destructor, Assignment
-    AVLTree() : root(NULL), min(NULL), max(NULL), size(0) {};
+    AVLTree();
     AVLTree(const AVLTree<T>& tree);
     AVLTree &operator=(const AVLTree<T> &tree);
     void sortedArrayInit(T data_arr[], int n);
-    ~AVLTree(){
-        empty();
-    }
+    ~AVLTree();
 
     // Interface Functions
     void insert(const T& data);
     T* find(const T& data);
+    T* select(int index) const;
     void remove(const T& data);
     int getHeight() const;
     void empty();
     void printTree() const;
     bool isEmpty() const;
     T* getMaxData() const;
-    void printTree() const;
-    //------------Iterator--------//
+
+    //------------ Iterator ------------//
     class AvlIterator{
         Node* node;
         Node* max;
@@ -93,7 +94,17 @@ public:
 };
 
 static int maxInt(int num1, int num2);
+
 // Constructors, Destructor, Assignment ---------------------
+
+template<class T>
+AVLTree<T>::AVLTree() : root(NULL), min(NULL), max(NULL), size(0) {
+}
+
+template<class T>
+AVLTree<T>::~AVLTree(){
+    empty();
+}
 
 template<class T>
 AVLTree<T>::AVLTree(const AVLTree<T>& tree):root(NULL), min(NULL), max(NULL), size(0){
@@ -151,6 +162,15 @@ T* AVLTree<T>::find(const T& data){
 }
 
 template<class T>
+T* AVLTree<T>::select(int index) const{
+    if(index > size || index < 0)
+        throw InvalidIndex();
+
+    Node* node = selectNode(root, index);
+    return node->data;
+}
+
+template<class T>
 void AVLTree<T>::remove(const T& data) {
     if (&data == NULL || size == 0) {
         return;
@@ -192,7 +212,6 @@ void AVLTree<T>::printTree() const {
     printTree_aux(root);
 }
 
-
 template<class T>
 bool AVLTree<T>::isEmpty() const{
     return size == 0;
@@ -210,6 +229,7 @@ typename AVLTree<T>::Node* AVLTree<T>::initNode(const T& data){
     Node* node = new Node;
     node->data = new T(data);
     node->height = 0;
+    node->size = 0;
     node->left = NULL;
     node->right = NULL;
     node->father = NULL;
@@ -222,6 +242,7 @@ AVLTree<T>::insertNode(AVLTree<T>::Node *node, AVLTree<T>::Node *target, AVLTree
     //Inserting the node
     if (target == NULL) {
         node->father = father;
+        node->size = nodeSize(node->left) + nodeSize(node->right) + 1;
         return node;
     }
 
@@ -233,7 +254,7 @@ AVLTree<T>::insertNode(AVLTree<T>::Node *node, AVLTree<T>::Node *target, AVLTree
 
     //Balancing the tree
     if (balanceFactor(target) > 1) {
-        if (balanceFactor(target->left) == 1) {
+        if (balanceFactor(target->left) >= 0) {
             return rollLeftLeft(target); //LL
         } else {
             return rollLeftRight(target);//LR
@@ -246,6 +267,7 @@ AVLTree<T>::insertNode(AVLTree<T>::Node *node, AVLTree<T>::Node *target, AVLTree
         }
     }
     target->height = maxInt(height(target->right), height(target->left)) + 1;
+    target->size = nodeSize(target->left) + nodeSize(target->right) + 1;
     return target;
 }
 
@@ -262,14 +284,14 @@ typename AVLTree<T>::Node* AVLTree<T>::removeNode(AVLTree<T>::Node *node, AVLTre
             delete target;
             return NULL;
         } else if (!target->right) {
-            // Only right son
+            // Only left son
             Node* temp = target->left;
             delete target->data;
             target->data = new T(*temp->data);
             target->left = removeNode(target, target->left);
 
         } else if (!target->left) {
-            // Only left son
+            // Only right son
             Node* temp = target->right;
             delete target->data;
             target->data = new T(*temp->data);
@@ -289,10 +311,11 @@ typename AVLTree<T>::Node* AVLTree<T>::removeNode(AVLTree<T>::Node *node, AVLTre
 
 
     target->height = maxInt(height(target->left), height(target->right)) + 1;
+    target->size = nodeSize(target->left) + nodeSize(target->right) + 1;
 
     // Balancing the tree
     if (balanceFactor(target) > 1) {
-        if (balanceFactor(target->left) == 1) {
+        if (balanceFactor(target->left) >= 0) {
             return rollLeftLeft(target); //LL
         } else {
             return rollLeftRight(target);//LR
@@ -323,6 +346,16 @@ typename AVLTree<T>::Node* AVLTree<T>::findNode(AVLTree<T>::Node* node, const T&
 }
 
 template<class T>
+typename AVLTree<T>::Node* AVLTree<T>::selectNode(AVLTree<T>::Node *node, int index) const{
+    if(nodeSize(node->left) == index - 1)
+        return node;
+    else if(nodeSize(node->left) > index - 1)
+        return selectNode(node->left, index);
+    else
+        return selectNode(node->right, index - (nodeSize(node->left) + 1));
+}
+
+template<class T>
 int AVLTree<T>::balanceFactor(AVLTree<T>::Node *node) const {
     return height(node->left) - height(node->right);
 }
@@ -332,6 +365,10 @@ int AVLTree<T>::height(const Node* node) const{
     return node == NULL ? -1 : node->height;
 }
 
+template<class T>
+int AVLTree<T>::nodeSize(const Node* node) const {
+    return node == NULL ? 0 : node->size;
+}
 
 template<class T>
 typename AVLTree<T>::Node* AVLTree<T>::getMin(AVLTree<T>::Node* node) const{
@@ -374,10 +411,11 @@ typename AVLTree<T>::Node *AVLTree<T>::rollLeftLeft(AVLTree<T>::Node *node) {
     }
     node->left = node->father->right;
     node->father->right = node;
-
     node->height = maxInt(height(node->right), height(node->left)) + 1;
+    node->size = nodeSize(node->left) + nodeSize(node->right) + 1;
     if(node->father) {
         node->father->height = maxInt(height(node->father->right), height(node->father->left)) + 1;
+        node->father->size = nodeSize(node->father->left) + nodeSize(node->father->right) + 1;
     }
     return node->father;
 }
@@ -388,11 +426,15 @@ typename AVLTree<T>::Node *AVLTree<T>::rollRightRight(AVLTree<T>::Node *node) {
     node->right->father = node->father;
     node->father = temp;
     node->right = node->father->left;
+    if(node->right)
+        node->right->father = node;
     node->father->left = node;
 
     node->height = maxInt(height(node->right), height(node->left)) + 1;
+    node->size = nodeSize(node->left) + nodeSize(node->right) + 1;
     if(node->father){
         node->father->height = maxInt(height(node->father->right), height(node->father->left)) + 1;
+        node->father->size = nodeSize(node->father->left) + nodeSize(node->father->right) + 1;
     }
 
     return node->father;
@@ -409,7 +451,6 @@ typename AVLTree<T>::Node *AVLTree<T>::rollRightLeft(AVLTree<T>::Node *node) {
     node->right = rollLeftLeft(node->right);
     return rollRightRight(node);
 }
-
 // Tree Traversals----------------------------------------------------
 
 
@@ -418,10 +459,7 @@ void AVLTree<T>::printTree_aux(AVLTree<T>::Node* node) const {
     if(node == NULL)
         return;
     printTree_aux(node->left);
-    if(node->father)
-        std::cout << *node->data << " BF: " << balanceFactor(node) << " Height: " << height(node) << " Father: " << node->father->data std::endl;
-    else
-        std::cout << *node->data << " BF: " << balanceFactor(node) << " Height: " << height(node) << std::endl;
+    std::cout << *node->data << " BF: " << balanceFactor(node) << " Height: " << height(node) << " Size: " << nodeSize(node) << std::endl;
     printTree_aux(node->right);
 }
 
@@ -439,6 +477,7 @@ typename AVLTree<T>::Node* AVLTree<T>::sortedInit_aux(T data_arr[], int start, i
     node->left = sortedInit_aux(data_arr, start, mid -1, node);
     node->right = sortedInit_aux(data_arr, mid + 1, end, node);
     node->height = maxInt(height(node->right), height(node->left)) + 1;
+    node->size = nodeSize(node->left) + nodeSize(node->right) + 1;
     return node;
 }
 
@@ -459,6 +498,7 @@ typename AVLTree<T>::Node* AVLTree<T>::copyNode(AVLTree<T>::Node* node){
     if(new_node->right)
         new_node->right->father = new_node;
     new_node->height = maxInt(height(new_node->right), height(new_node->left)) + 1;
+    new_node->size = nodeSize(new_node->right) + nodeSize(new_node->left) + 1;
     return new_node;
 }
 
@@ -482,7 +522,9 @@ void AVLTree<T>::empty_aux(AVLTree<T>::Node* node) {
 static int maxInt(int num1, int num2){
     return num1 > num2 ? num1 : num2;
 }
+
 //---------------Iterator Implementation-----------//
+
 template<class T>
 AVLTree<T>::AvlIterator::AvlIterator(Node* node, Node* max): node(node), max(max){
 }
@@ -503,6 +545,9 @@ AVLTree<T>::AvlIterator::AvlIterator(const AvlIterator& avl_iterator): node(avl_
 
 template<class T>
 T* AVLTree<T>::AvlIterator::operator*(){
+    if(node == NULL){
+        return NULL;
+    }
     return node->data;
 }
 
@@ -549,4 +594,4 @@ typename AVLTree<T>::AvlIterator AVLTree<T>::end() const{
     return AvlIterator(NULL,NULL);
 }
 
-#endif //DS_HW1_AVL_TREE_H
+#endif //MAIN_CPP_AVLRANKTREE_H

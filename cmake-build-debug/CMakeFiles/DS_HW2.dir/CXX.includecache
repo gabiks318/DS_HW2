@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/yan11/OneDrive/Desktop/Data Structures/DS_HW2/AVLRankTree.h
+exceptions.h
+C:/Users/yan11/OneDrive/Desktop/Data Structures/DS_HW2/exceptions.h
+iostream
+-
+
+C:/Users/yan11/OneDrive/Desktop/Data Structures/DS_HW2/CarAgenciesManager.cpp
+CarAgenciesManager.h
+C:/Users/yan11/OneDrive/Desktop/Data Structures/DS_HW2/CarAgenciesManager.h
+
+C:/Users/yan11/OneDrive/Desktop/Data Structures/DS_HW2/CarAgenciesManager.h
+library.h
+C:/Users/yan11/OneDrive/Desktop/Data Structures/DS_HW2/library.h
+UnionFindAgency.h
+C:/Users/yan11/OneDrive/Desktop/Data Structures/DS_HW2/UnionFindAgency.h
+
+C:/Users/yan11/OneDrive/Desktop/Data Structures/DS_HW2/CarType.h
+
+C:/Users/yan11/OneDrive/Desktop/Data Structures/DS_HW2/UnionFindAgency.cpp
+UnionFindAgency.h
+C:/Users/yan11/OneDrive/Desktop/Data Structures/DS_HW2/UnionFindAgency.h
+CarType.h
+C:/Users/yan11/OneDrive/Desktop/Data Structures/DS_HW2/CarType.h
+
+C:/Users/yan11/OneDrive/Desktop/Data Structures/DS_HW2/UnionFindAgency.h
+CarType.h
+C:/Users/yan11/OneDrive/Desktop/Data Structures/DS_HW2/CarType.h
+AVLRankTree.h
+C:/Users/yan11/OneDrive/Desktop/Data Structures/DS_HW2/AVLRankTree.h
+
+C:/Users/yan11/OneDrive/Desktop/Data Structures/DS_HW2/exceptions.h
+exception
+-
+new
+-
+
+C:/Users/yan11/OneDrive/Desktop/Data Structures/DS_HW2/library.h
+
