@@ -140,18 +140,18 @@ CMakeFiles/DS_HW2.dir/CarSales.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DS_HW2.dir/CarSales.cpp.s"
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\I686-W~2.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Gabriel\Desktop\Technion\Programming Files\Data Structures\DS_HW2\CarSales.cpp" -o CMakeFiles\DS_HW2.dir\CarSales.cpp.s
 
-CMakeFiles/DS_HW2.dir/library.cpp.obj: CMakeFiles/DS_HW2.dir/flags.make
-CMakeFiles/DS_HW2.dir/library.cpp.obj: ../library.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Gabriel\Desktop\Technion\Programming Files\Data Structures\DS_HW2\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/DS_HW2.dir/library.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\I686-W~2.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\DS_HW2.dir\library.cpp.obj -c "C:\Users\Gabriel\Desktop\Technion\Programming Files\Data Structures\DS_HW2\library.cpp"
+CMakeFiles/DS_HW2.dir/library2.cpp.obj: CMakeFiles/DS_HW2.dir/flags.make
+CMakeFiles/DS_HW2.dir/library2.cpp.obj: ../library2.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Gabriel\Desktop\Technion\Programming Files\Data Structures\DS_HW2\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/DS_HW2.dir/library2.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\I686-W~2.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\DS_HW2.dir\library2.cpp.obj -c "C:\Users\Gabriel\Desktop\Technion\Programming Files\Data Structures\DS_HW2\library2.cpp"
 
-CMakeFiles/DS_HW2.dir/library.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DS_HW2.dir/library.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\I686-W~2.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Gabriel\Desktop\Technion\Programming Files\Data Structures\DS_HW2\library.cpp" > CMakeFiles\DS_HW2.dir\library.cpp.i
+CMakeFiles/DS_HW2.dir/library2.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DS_HW2.dir/library2.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\I686-W~2.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Gabriel\Desktop\Technion\Programming Files\Data Structures\DS_HW2\library2.cpp" > CMakeFiles\DS_HW2.dir\library2.cpp.i
 
-CMakeFiles/DS_HW2.dir/library.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DS_HW2.dir/library.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\I686-W~2.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Gabriel\Desktop\Technion\Programming Files\Data Structures\DS_HW2\library.cpp" -o CMakeFiles\DS_HW2.dir\library.cpp.s
+CMakeFiles/DS_HW2.dir/library2.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DS_HW2.dir/library2.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\I686-W~2.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Gabriel\Desktop\Technion\Programming Files\Data Structures\DS_HW2\library2.cpp" -o CMakeFiles\DS_HW2.dir\library2.cpp.s
 
 # Object files for target DS_HW2
 DS_HW2_OBJECTS = \
@@ -160,7 +160,7 @@ DS_HW2_OBJECTS = \
 "CMakeFiles/DS_HW2.dir/UnionFindAgency.cpp.obj" \
 "CMakeFiles/DS_HW2.dir/CarType.cpp.obj" \
 "CMakeFiles/DS_HW2.dir/CarSales.cpp.obj" \
-"CMakeFiles/DS_HW2.dir/library.cpp.obj"
+"CMakeFiles/DS_HW2.dir/library2.cpp.obj"
 
 # External object files for target DS_HW2
 DS_HW2_EXTERNAL_OBJECTS =
@@ -170,7 +170,7 @@ DS_HW2.exe: CMakeFiles/DS_HW2.dir/CarAgenciesManager.cpp.obj
 DS_HW2.exe: CMakeFiles/DS_HW2.dir/UnionFindAgency.cpp.obj
 DS_HW2.exe: CMakeFiles/DS_HW2.dir/CarType.cpp.obj
 DS_HW2.exe: CMakeFiles/DS_HW2.dir/CarSales.cpp.obj
-DS_HW2.exe: CMakeFiles/DS_HW2.dir/library.cpp.obj
+DS_HW2.exe: CMakeFiles/DS_HW2.dir/library2.cpp.obj
 DS_HW2.exe: CMakeFiles/DS_HW2.dir/build.make
 DS_HW2.exe: CMakeFiles/DS_HW2.dir/linklibs.rsp
 DS_HW2.exe: CMakeFiles/DS_HW2.dir/objects1.rsp

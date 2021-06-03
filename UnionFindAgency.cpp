@@ -78,6 +78,9 @@ void UnionFindAgency::UniteCarAgencies(int agency_1, int agency_2){
     CarAgency* car_agency1 = FindCarAgency(agency_1);
     CarAgency* car_agency2 = FindCarAgency(agency_2);
 
+    if(car_agency1->agency_id == car_agency2->agency_id)
+        return;
+
     // Get merged trees
     AVLTree<CarSales> merged_sales(car_agency1->sales_tree, car_agency2->sales_tree);
     AVLTree<CarType> merged_types(car_agency1->type_tree, car_agency2->type_tree);

@@ -249,32 +249,32 @@ UnionFindAgency.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DS_HW2.dir\build.make CMakeFiles/DS_HW2.dir/UnionFindAgency.cpp.s
 .PHONY : UnionFindAgency.cpp.s
 
-library.obj: library.cpp.obj
+library2.obj: library2.cpp.obj
 
-.PHONY : library.obj
+.PHONY : library2.obj
 
 # target to build an object file
-library.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DS_HW2.dir\build.make CMakeFiles/DS_HW2.dir/library.cpp.obj
-.PHONY : library.cpp.obj
+library2.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DS_HW2.dir\build.make CMakeFiles/DS_HW2.dir/library2.cpp.obj
+.PHONY : library2.cpp.obj
 
-library.i: library.cpp.i
+library2.i: library2.cpp.i
 
-.PHONY : library.i
+.PHONY : library2.i
 
 # target to preprocess a source file
-library.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DS_HW2.dir\build.make CMakeFiles/DS_HW2.dir/library.cpp.i
-.PHONY : library.cpp.i
+library2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DS_HW2.dir\build.make CMakeFiles/DS_HW2.dir/library2.cpp.i
+.PHONY : library2.cpp.i
 
-library.s: library.cpp.s
+library2.s: library2.cpp.s
 
-.PHONY : library.s
+.PHONY : library2.s
 
 # target to generate assembly for a file
-library.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DS_HW2.dir\build.make CMakeFiles/DS_HW2.dir/library.cpp.s
-.PHONY : library.cpp.s
+library2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DS_HW2.dir\build.make CMakeFiles/DS_HW2.dir/library2.cpp.s
+.PHONY : library2.cpp.s
 
 main.obj: main.cpp.obj
 
@@ -324,9 +324,9 @@ help:
 	@echo ... UnionFindAgency.obj
 	@echo ... UnionFindAgency.i
 	@echo ... UnionFindAgency.s
-	@echo ... library.obj
-	@echo ... library.i
-	@echo ... library.s
+	@echo ... library2.obj
+	@echo ... library2.i
+	@echo ... library2.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

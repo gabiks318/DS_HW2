@@ -26,7 +26,7 @@
 },
 {
   "directory": "C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/build",
-  "command": "C:\\PROGRA~2\\MINGW-~1\\I686-8~1.0-P\\mingw32\\bin\\I686-W~2.EXE   -g -std=gnu++11 -o CMakeFiles\\DS_HW2.dir\\library.cpp.obj -c \"C:\\Users\\Gabriel\\Desktop\\Technion\\Programming Files\\Data Structures\\DS_HW2\\library.cpp\"",
-  "file": "C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/library.cpp"
+  "command": "C:\\PROGRA~2\\MINGW-~1\\I686-8~1.0-P\\mingw32\\bin\\I686-W~2.EXE   -g -std=gnu++11 -o CMakeFiles\\DS_HW2.dir\\library2.cpp.obj -c \"C:\\Users\\Gabriel\\Desktop\\Technion\\Programming Files\\Data Structures\\DS_HW2\\library2.cpp\"",
+  "file": "C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/library2.cpp"
 }
 ]
