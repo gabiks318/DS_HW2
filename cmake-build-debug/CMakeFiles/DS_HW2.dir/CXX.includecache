@@ -6,39 +6,13 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/AVLRankTree.h
-exceptions.h
-C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/exceptions.h
-iostream
--
-
-C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/CarSales.h
-CarType.h
-C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/CarType.h
-
-C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/CarType.h
-
-C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/UnionFindAgency.cpp
-UnionFindAgency.h
-C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/UnionFindAgency.h
-CarType.h
-C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/CarType.h
+C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/CarSales.cpp
 CarSales.h
 C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/CarSales.h
-iostream
--
 
-C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/UnionFindAgency.h
-CarSales.h
 C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/CarSales.h
 CarType.h
 C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/CarType.h
-AVLRankTree.h
-C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/AVLRankTree.h
 
-C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/exceptions.h
-exception
--
-new
--
+C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/CarType.h
 

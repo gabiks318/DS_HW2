@@ -17,7 +17,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "library.h"
+#include "library2.h"
 
 #ifdef __cplusplus
 extern "C" {
@@ -191,7 +191,6 @@ static errorType OnInit(void** DS, const char* const command) {
 }
 
 static errorType OnAddAgency(void* DS, const char* const command) {
-    int typeID;
     ValidateRead(0, 0, "%s failed.\n", commandStr[ADDAGENCY_CMD]);
     StatusType res = AddAgency(DS);
 
@@ -221,29 +220,29 @@ static errorType OnSellCar(void* DS, const char* const command) {
 
 static errorType OnUniteAgencies(void* DS, const char* const command) {
     int agencyID1, agencyID2;
-    ValidateRead(sscanf(command, "%d %d", &agencyID1, &agencyID2), 2, "%s failed.\n", commandStr[ADDAGENCY_CMD]);
+    ValidateRead(sscanf(command, "%d %d", &agencyID1, &agencyID2), 2, "%s failed.\n", commandStr[UNITEAGENCIES_CMD]);
     StatusType res = UniteAgencies(DS, agencyID1, agencyID2);
 
     if (res != SUCCESS) {
-        printf("%s: %s\n", commandStr[ADDAGENCY_CMD], ReturnValToStr(res));
+        printf("%s: %s\n", commandStr[UNITEAGENCIES_CMD], ReturnValToStr(res));
         return error_free;
     }
 
-    printf("%s: %s\n", commandStr[ADDAGENCY_CMD], ReturnValToStr(res));
+    printf("%s: %s\n", commandStr[UNITEAGENCIES_CMD], ReturnValToStr(res));
     return error_free;
 }
 
 static errorType OnGetIthSoldType(void* DS, const char* const command) {
-    int agencyID, i, result;
-    ValidateRead(sscanf(command, "%d", &agencyID, &i), 2, "%s failed.\n", commandStr[GETITHSOLDTYPE_CMD]);
-    StatusType res = GetIthSoldType(DS, agencyID, i, &result);
+    int agencyID, i, typeID;
+    ValidateRead(sscanf(command, "%d %d", &agencyID, &i), 2, "%s failed.\n", commandStr[GETITHSOLDTYPE_CMD]);
+    StatusType res = GetIthSoldType(DS, agencyID, i, &typeID);
 
     if (res != SUCCESS) {
         printf("%s: %s\n", commandStr[GETITHSOLDTYPE_CMD], ReturnValToStr(res));
         return error_free;
     }
 
-    printf("%s: %d\n", commandStr[GETITHSOLDTYPE_CMD], res);
+    printf("%s: %d\n", commandStr[GETITHSOLDTYPE_CMD], typeID);
     return error_free;
 }
 

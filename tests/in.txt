@@ -16,5 +16,6 @@ UniteAgencies 0 1
 UniteAgencies 0 2
 GetIthSoldType 0 0
 GetIthSoldType 0 1
-GetIthSoldType 0 2 
+GetIthSoldType 0 2
+GetIthSoldType 0 3
 Quit

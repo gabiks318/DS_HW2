@@ -8,7 +8,7 @@ CMakeFiles/DS_HW2.dir/CarAgenciesManager.cpp.obj: ../CarSales.h
 CMakeFiles/DS_HW2.dir/CarAgenciesManager.cpp.obj: ../CarType.h
 CMakeFiles/DS_HW2.dir/CarAgenciesManager.cpp.obj: ../UnionFindAgency.h
 CMakeFiles/DS_HW2.dir/CarAgenciesManager.cpp.obj: ../exceptions.h
-CMakeFiles/DS_HW2.dir/CarAgenciesManager.cpp.obj: ../library.h
+CMakeFiles/DS_HW2.dir/CarAgenciesManager.cpp.obj: ../library2.h
 
 CMakeFiles/DS_HW2.dir/CarSales.cpp.obj: ../CarSales.cpp
 CMakeFiles/DS_HW2.dir/CarSales.cpp.obj: ../CarSales.h
@@ -24,15 +24,15 @@ CMakeFiles/DS_HW2.dir/UnionFindAgency.cpp.obj: ../UnionFindAgency.cpp
 CMakeFiles/DS_HW2.dir/UnionFindAgency.cpp.obj: ../UnionFindAgency.h
 CMakeFiles/DS_HW2.dir/UnionFindAgency.cpp.obj: ../exceptions.h
 
-CMakeFiles/DS_HW2.dir/library.cpp.obj: ../AVLRankTree.h
-CMakeFiles/DS_HW2.dir/library.cpp.obj: ../CarAgenciesManager.h
-CMakeFiles/DS_HW2.dir/library.cpp.obj: ../CarSales.h
-CMakeFiles/DS_HW2.dir/library.cpp.obj: ../CarType.h
-CMakeFiles/DS_HW2.dir/library.cpp.obj: ../UnionFindAgency.h
-CMakeFiles/DS_HW2.dir/library.cpp.obj: ../exceptions.h
-CMakeFiles/DS_HW2.dir/library.cpp.obj: ../library.cpp
-CMakeFiles/DS_HW2.dir/library.cpp.obj: ../library.h
+CMakeFiles/DS_HW2.dir/library2.cpp.obj: ../AVLRankTree.h
+CMakeFiles/DS_HW2.dir/library2.cpp.obj: ../CarAgenciesManager.h
+CMakeFiles/DS_HW2.dir/library2.cpp.obj: ../CarSales.h
+CMakeFiles/DS_HW2.dir/library2.cpp.obj: ../CarType.h
+CMakeFiles/DS_HW2.dir/library2.cpp.obj: ../UnionFindAgency.h
+CMakeFiles/DS_HW2.dir/library2.cpp.obj: ../exceptions.h
+CMakeFiles/DS_HW2.dir/library2.cpp.obj: ../library2.cpp
+CMakeFiles/DS_HW2.dir/library2.cpp.obj: ../library2.h
 
-CMakeFiles/DS_HW2.dir/main.cpp.obj: ../library.h
+CMakeFiles/DS_HW2.dir/main.cpp.obj: ../library2.h
 CMakeFiles/DS_HW2.dir/main.cpp.obj: ../main.cpp
 

@@ -151,6 +151,6 @@ void UnionFindAgency::UniteCarAgencies(int agency_1, int agency_2){
 
 int UnionFindAgency::GetIthSoldType(int agency_id, int i){
     CarAgency* car_agency = FindCarAgency(agency_id);
-    CarSales* car_to_select = car_agency->sales_tree.select(i);
+    CarSales* car_to_select = car_agency->sales_tree.select(i + 1);
     return car_to_select->getTypeId();
 }
