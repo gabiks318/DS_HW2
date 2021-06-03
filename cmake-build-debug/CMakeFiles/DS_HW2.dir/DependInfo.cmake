@@ -9,7 +9,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/CarType.cpp" "C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/cmake-build-debug/CMakeFiles/DS_HW2.dir/CarType.cpp.obj"
   "C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/UnionFindAgency.cpp" "C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/cmake-build-debug/CMakeFiles/DS_HW2.dir/UnionFindAgency.cpp.obj"
   "C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/library.cpp" "C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/cmake-build-debug/CMakeFiles/DS_HW2.dir/library.cpp.obj"
-  "C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/tests/class_tests.cpp" "C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/cmake-build-debug/CMakeFiles/DS_HW2.dir/tests/class_tests.cpp.obj"
+  "C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/main.cpp" "C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/cmake-build-debug/CMakeFiles/DS_HW2.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

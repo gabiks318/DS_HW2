@@ -1,0 +1,32 @@
+[
+{
+  "directory": "C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/build",
+  "command": "C:\\PROGRA~2\\MINGW-~1\\I686-8~1.0-P\\mingw32\\bin\\I686-W~2.EXE   -g -std=gnu++11 -o CMakeFiles\\DS_HW2.dir\\main.cpp.obj -c \"C:\\Users\\Gabriel\\Desktop\\Technion\\Programming Files\\Data Structures\\DS_HW2\\main.cpp\"",
+  "file": "C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/main.cpp"
+},
+{
+  "directory": "C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/build",
+  "command": "C:\\PROGRA~2\\MINGW-~1\\I686-8~1.0-P\\mingw32\\bin\\I686-W~2.EXE   -g -std=gnu++11 -o CMakeFiles\\DS_HW2.dir\\CarAgenciesManager.cpp.obj -c \"C:\\Users\\Gabriel\\Desktop\\Technion\\Programming Files\\Data Structures\\DS_HW2\\CarAgenciesManager.cpp\"",
+  "file": "C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/CarAgenciesManager.cpp"
+},
+{
+  "directory": "C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/build",
+  "command": "C:\\PROGRA~2\\MINGW-~1\\I686-8~1.0-P\\mingw32\\bin\\I686-W~2.EXE   -g -std=gnu++11 -o CMakeFiles\\DS_HW2.dir\\UnionFindAgency.cpp.obj -c \"C:\\Users\\Gabriel\\Desktop\\Technion\\Programming Files\\Data Structures\\DS_HW2\\UnionFindAgency.cpp\"",
+  "file": "C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/UnionFindAgency.cpp"
+},
+{
+  "directory": "C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/build",
+  "command": "C:\\PROGRA~2\\MINGW-~1\\I686-8~1.0-P\\mingw32\\bin\\I686-W~2.EXE   -g -std=gnu++11 -o CMakeFiles\\DS_HW2.dir\\CarType.cpp.obj -c \"C:\\Users\\Gabriel\\Desktop\\Technion\\Programming Files\\Data Structures\\DS_HW2\\CarType.cpp\"",
+  "file": "C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/CarType.cpp"
+},
+{
+  "directory": "C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/build",
+  "command": "C:\\PROGRA~2\\MINGW-~1\\I686-8~1.0-P\\mingw32\\bin\\I686-W~2.EXE   -g -std=gnu++11 -o CMakeFiles\\DS_HW2.dir\\CarSales.cpp.obj -c \"C:\\Users\\Gabriel\\Desktop\\Technion\\Programming Files\\Data Structures\\DS_HW2\\CarSales.cpp\"",
+  "file": "C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/CarSales.cpp"
+},
+{
+  "directory": "C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/build",
+  "command": "C:\\PROGRA~2\\MINGW-~1\\I686-8~1.0-P\\mingw32\\bin\\I686-W~2.EXE   -g -std=gnu++11 -o CMakeFiles\\DS_HW2.dir\\library.cpp.obj -c \"C:\\Users\\Gabriel\\Desktop\\Technion\\Programming Files\\Data Structures\\DS_HW2\\library.cpp\"",
+  "file": "C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/library.cpp"
+}
+]

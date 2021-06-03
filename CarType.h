@@ -8,7 +8,7 @@ protected:
 
 public:
     CarType(int typeId = -1, int sales = -1);
-    ~CarType() = default;
+    virtual ~CarType(){};
     CarType(const CarType&);
     CarType& operator=(const CarType&);
     bool operator<(const CarType&) const;

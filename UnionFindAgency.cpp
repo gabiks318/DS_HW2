@@ -58,15 +58,13 @@ UnionFindAgency::CarAgency* UnionFindAgency::findAux(CarAgency* agency) {
 
 void UnionFindAgency::SellCar(int agency_id, int sales, int type_id) {
     CarAgency* car_agency = FindCarAgency(agency_id);
-    CarType *car_type;
+    CarType *car_type = NULL;
     try {
-        CarType car_to_find(type_id, 0);
-        car_type = car_agency->type_tree.find(car_to_find);
-        std::cout << "meir" << std::endl;
+        car_type = car_agency->type_tree.find(CarType(type_id, 0));
     } catch (NodeDoesntExist &e){
-        std::cout << "meir" << std::endl;
         car_agency->type_tree.insert(CarType(type_id, sales)); //new car in agency
         car_agency->sales_tree.insert(CarSales(type_id,sales));
+        car_type = car_agency->type_tree.find(CarType(type_id, sales));
     }
 
     //updating car sales in agency

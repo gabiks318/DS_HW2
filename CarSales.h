@@ -10,6 +10,7 @@
 class CarSales: public CarType{
 public:
     CarSales(int typeId = -1, int sales = -1);
+    ~CarSales(){};
     bool operator<(const CarSales&) const;
     CarSales(const CarSales&);
 };

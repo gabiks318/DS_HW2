@@ -40,6 +40,9 @@ bool testCarType(){
 
     ASSERT_TEST(type1.getSales() == 8, returnLabel);
     ASSERT_TEST(type1.getTypeId() == 3, returnLabel);
+
+    type1.setSales(9);
+    ASSERT_TEST(type1.getSales() == 9, returnLabel);
     returnLabel:
     return result;
 
@@ -47,12 +50,12 @@ bool testCarType(){
 
 bool testCarSales(){
     bool result = true;
-    CarSales type1 = CarSales();
+    CarSales type1 = CarSales(4,2);
     CarSales type2 = CarSales(3, 8);
     CarSales type3(type2);
 
-    ASSERT_TEST(type1.getSales() == -1, returnLabel);
-    ASSERT_TEST(type1.getTypeId() == -1, returnLabel);
+    ASSERT_TEST(type1.getSales() == 2, returnLabel);
+    ASSERT_TEST(type1.getTypeId() == 4, returnLabel);
 
     ASSERT_TEST(type2.getSales() == 8, returnLabel);
     ASSERT_TEST(type2.getTypeId() == 3, returnLabel);
@@ -73,6 +76,9 @@ bool testCarSales(){
     ASSERT_TEST(type1.getSales() == 8, returnLabel);
     ASSERT_TEST(type1.getTypeId() == 3, returnLabel);
 
+    type1.setSales(9);
+    ASSERT_TEST(type1.getSales() == 9, returnLabel);
+    ASSERT_TEST(type1 > type2, returnLabel);
     returnLabel:
     return result;
 }

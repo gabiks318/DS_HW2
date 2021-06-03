@@ -277,32 +277,32 @@ library.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DS_HW2.dir\build.make CMakeFiles/DS_HW2.dir/library.cpp.s
 .PHONY : library.cpp.s
 
-tests/class_tests.obj: tests/class_tests.cpp.obj
+main.obj: main.cpp.obj
 
-.PHONY : tests/class_tests.obj
+.PHONY : main.obj
 
 # target to build an object file
-tests/class_tests.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DS_HW2.dir\build.make CMakeFiles/DS_HW2.dir/tests/class_tests.cpp.obj
-.PHONY : tests/class_tests.cpp.obj
+main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DS_HW2.dir\build.make CMakeFiles/DS_HW2.dir/main.cpp.obj
+.PHONY : main.cpp.obj
 
-tests/class_tests.i: tests/class_tests.cpp.i
+main.i: main.cpp.i
 
-.PHONY : tests/class_tests.i
+.PHONY : main.i
 
 # target to preprocess a source file
-tests/class_tests.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DS_HW2.dir\build.make CMakeFiles/DS_HW2.dir/tests/class_tests.cpp.i
-.PHONY : tests/class_tests.cpp.i
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DS_HW2.dir\build.make CMakeFiles/DS_HW2.dir/main.cpp.i
+.PHONY : main.cpp.i
 
-tests/class_tests.s: tests/class_tests.cpp.s
+main.s: main.cpp.s
 
-.PHONY : tests/class_tests.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-tests/class_tests.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DS_HW2.dir\build.make CMakeFiles/DS_HW2.dir/tests/class_tests.cpp.s
-.PHONY : tests/class_tests.cpp.s
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DS_HW2.dir\build.make CMakeFiles/DS_HW2.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -328,9 +328,9 @@ help:
 	@echo ... library.obj
 	@echo ... library.i
 	@echo ... library.s
-	@echo ... tests/class_tests.obj
-	@echo ... tests/class_tests.i
-	@echo ... tests/class_tests.s
+	@echo ... main.obj
+	@echo ... main.i
+	@echo ... main.s
 .PHONY : help
 
 
