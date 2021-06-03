@@ -110,7 +110,7 @@
 		<Unit filename="C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/library.h">
 			<Option target="DS_HW2"/>
 		</Unit>
-		<Unit filename="C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/tests/avl_tests.cpp">
+		<Unit filename="C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/tests/class_tests.cpp">
 			<Option target="DS_HW2"/>
 		</Unit>
 		<Unit filename="C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/CMakeLists.txt">

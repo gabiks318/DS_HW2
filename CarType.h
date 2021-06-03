@@ -5,6 +5,7 @@ class CarType {
 protected:
     int type_id;
     int sales;
+
 public:
     CarType(int typeId = -1, int sales = -1);
     ~CarType() = default;

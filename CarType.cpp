@@ -17,7 +17,7 @@ CarType& CarType::operator=(const CarType& car_type){
 }
 
 bool CarType::operator<(const CarType& car_type) const {
-    return type_id > car_type.getTypeId();
+    return type_id < car_type.getTypeId();
 }
 
 bool CarType::operator==(const CarType& car_best_sells) const{

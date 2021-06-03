@@ -33,8 +33,8 @@ CMakeFiles/DS_HW2.dir/library.cpp.obj: ../exceptions.h
 CMakeFiles/DS_HW2.dir/library.cpp.obj: ../library.cpp
 CMakeFiles/DS_HW2.dir/library.cpp.obj: ../library.h
 
-CMakeFiles/DS_HW2.dir/tests/avl_tests.cpp.obj: ../AVLRankTree.h
-CMakeFiles/DS_HW2.dir/tests/avl_tests.cpp.obj: ../exceptions.h
-CMakeFiles/DS_HW2.dir/tests/avl_tests.cpp.obj: ../tests/avl_tests.cpp
-CMakeFiles/DS_HW2.dir/tests/avl_tests.cpp.obj: ../tests/test_utilities.h
+CMakeFiles/DS_HW2.dir/tests/class_tests.cpp.obj: ../CarSales.h
+CMakeFiles/DS_HW2.dir/tests/class_tests.cpp.obj: ../CarType.h
+CMakeFiles/DS_HW2.dir/tests/class_tests.cpp.obj: ../tests/class_tests.cpp
+CMakeFiles/DS_HW2.dir/tests/class_tests.cpp.obj: ../tests/test_utilities.h
 

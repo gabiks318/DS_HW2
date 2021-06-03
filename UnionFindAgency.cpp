@@ -1,7 +1,7 @@
 #include "UnionFindAgency.h"
 #include "CarType.h"
 #include "CarSales.h"
-
+#include <iostream>
 #define N 50
 
 UnionFindAgency::UnionFindAgency():car_agencies(new CarAgency*[N * sizeof(CarAgency*)]) , max_size(N), curr_size(0) {
@@ -60,8 +60,11 @@ void UnionFindAgency::SellCar(int agency_id, int sales, int type_id) {
     CarAgency* car_agency = FindCarAgency(agency_id);
     CarType *car_type;
     try {
-        car_type = car_agency->type_tree.find(CarType(type_id, 0));
+        CarType car_to_find(type_id, 0);
+        car_type = car_agency->type_tree.find(car_to_find);
+        std::cout << "meir" << std::endl;
     } catch (NodeDoesntExist &e){
+        std::cout << "meir" << std::endl;
         car_agency->type_tree.insert(CarType(type_id, sales)); //new car in agency
         car_agency->sales_tree.insert(CarSales(type_id,sales));
     }

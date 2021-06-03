@@ -277,32 +277,32 @@ library.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DS_HW2.dir\build.make CMakeFiles/DS_HW2.dir/library.cpp.s
 .PHONY : library.cpp.s
 
-tests/avl_tests.obj: tests/avl_tests.cpp.obj
+tests/class_tests.obj: tests/class_tests.cpp.obj
 
-.PHONY : tests/avl_tests.obj
+.PHONY : tests/class_tests.obj
 
 # target to build an object file
-tests/avl_tests.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DS_HW2.dir\build.make CMakeFiles/DS_HW2.dir/tests/avl_tests.cpp.obj
-.PHONY : tests/avl_tests.cpp.obj
+tests/class_tests.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DS_HW2.dir\build.make CMakeFiles/DS_HW2.dir/tests/class_tests.cpp.obj
+.PHONY : tests/class_tests.cpp.obj
 
-tests/avl_tests.i: tests/avl_tests.cpp.i
+tests/class_tests.i: tests/class_tests.cpp.i
 
-.PHONY : tests/avl_tests.i
+.PHONY : tests/class_tests.i
 
 # target to preprocess a source file
-tests/avl_tests.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DS_HW2.dir\build.make CMakeFiles/DS_HW2.dir/tests/avl_tests.cpp.i
-.PHONY : tests/avl_tests.cpp.i
+tests/class_tests.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DS_HW2.dir\build.make CMakeFiles/DS_HW2.dir/tests/class_tests.cpp.i
+.PHONY : tests/class_tests.cpp.i
 
-tests/avl_tests.s: tests/avl_tests.cpp.s
+tests/class_tests.s: tests/class_tests.cpp.s
 
-.PHONY : tests/avl_tests.s
+.PHONY : tests/class_tests.s
 
 # target to generate assembly for a file
-tests/avl_tests.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DS_HW2.dir\build.make CMakeFiles/DS_HW2.dir/tests/avl_tests.cpp.s
-.PHONY : tests/avl_tests.cpp.s
+tests/class_tests.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DS_HW2.dir\build.make CMakeFiles/DS_HW2.dir/tests/class_tests.cpp.s
+.PHONY : tests/class_tests.cpp.s
 
 # Help Target
 help:
@@ -328,9 +328,9 @@ help:
 	@echo ... library.obj
 	@echo ... library.i
 	@echo ... library.s
-	@echo ... tests/avl_tests.obj
-	@echo ... tests/avl_tests.i
-	@echo ... tests/avl_tests.s
+	@echo ... tests/class_tests.obj
+	@echo ... tests/class_tests.i
+	@echo ... tests/class_tests.s
 .PHONY : help
 
 

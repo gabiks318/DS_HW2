@@ -76,18 +76,18 @@ include CMakeFiles/DS_HW2.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/DS_HW2.dir/flags.make
 
-CMakeFiles/DS_HW2.dir/tests/avl_tests.cpp.obj: CMakeFiles/DS_HW2.dir/flags.make
-CMakeFiles/DS_HW2.dir/tests/avl_tests.cpp.obj: ../tests/avl_tests.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Gabriel\Desktop\Technion\Programming Files\Data Structures\DS_HW2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/DS_HW2.dir/tests/avl_tests.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\DS_HW2.dir\tests\avl_tests.cpp.obj -c "C:\Users\Gabriel\Desktop\Technion\Programming Files\Data Structures\DS_HW2\tests\avl_tests.cpp"
+CMakeFiles/DS_HW2.dir/tests/class_tests.cpp.obj: CMakeFiles/DS_HW2.dir/flags.make
+CMakeFiles/DS_HW2.dir/tests/class_tests.cpp.obj: ../tests/class_tests.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Gabriel\Desktop\Technion\Programming Files\Data Structures\DS_HW2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/DS_HW2.dir/tests/class_tests.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\DS_HW2.dir\tests\class_tests.cpp.obj -c "C:\Users\Gabriel\Desktop\Technion\Programming Files\Data Structures\DS_HW2\tests\class_tests.cpp"
 
-CMakeFiles/DS_HW2.dir/tests/avl_tests.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DS_HW2.dir/tests/avl_tests.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Gabriel\Desktop\Technion\Programming Files\Data Structures\DS_HW2\tests\avl_tests.cpp" > CMakeFiles\DS_HW2.dir\tests\avl_tests.cpp.i
+CMakeFiles/DS_HW2.dir/tests/class_tests.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DS_HW2.dir/tests/class_tests.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Gabriel\Desktop\Technion\Programming Files\Data Structures\DS_HW2\tests\class_tests.cpp" > CMakeFiles\DS_HW2.dir\tests\class_tests.cpp.i
 
-CMakeFiles/DS_HW2.dir/tests/avl_tests.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DS_HW2.dir/tests/avl_tests.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Gabriel\Desktop\Technion\Programming Files\Data Structures\DS_HW2\tests\avl_tests.cpp" -o CMakeFiles\DS_HW2.dir\tests\avl_tests.cpp.s
+CMakeFiles/DS_HW2.dir/tests/class_tests.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DS_HW2.dir/tests/class_tests.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Gabriel\Desktop\Technion\Programming Files\Data Structures\DS_HW2\tests\class_tests.cpp" -o CMakeFiles\DS_HW2.dir\tests\class_tests.cpp.s
 
 CMakeFiles/DS_HW2.dir/CarAgenciesManager.cpp.obj: CMakeFiles/DS_HW2.dir/flags.make
 CMakeFiles/DS_HW2.dir/CarAgenciesManager.cpp.obj: ../CarAgenciesManager.cpp
@@ -156,7 +156,7 @@ CMakeFiles/DS_HW2.dir/library.cpp.s: cmake_force
 
 # Object files for target DS_HW2
 DS_HW2_OBJECTS = \
-"CMakeFiles/DS_HW2.dir/tests/avl_tests.cpp.obj" \
+"CMakeFiles/DS_HW2.dir/tests/class_tests.cpp.obj" \
 "CMakeFiles/DS_HW2.dir/CarAgenciesManager.cpp.obj" \
 "CMakeFiles/DS_HW2.dir/UnionFindAgency.cpp.obj" \
 "CMakeFiles/DS_HW2.dir/CarType.cpp.obj" \
@@ -166,7 +166,7 @@ DS_HW2_OBJECTS = \
 # External object files for target DS_HW2
 DS_HW2_EXTERNAL_OBJECTS =
 
-DS_HW2.exe: CMakeFiles/DS_HW2.dir/tests/avl_tests.cpp.obj
+DS_HW2.exe: CMakeFiles/DS_HW2.dir/tests/class_tests.cpp.obj
 DS_HW2.exe: CMakeFiles/DS_HW2.dir/CarAgenciesManager.cpp.obj
 DS_HW2.exe: CMakeFiles/DS_HW2.dir/UnionFindAgency.cpp.obj
 DS_HW2.exe: CMakeFiles/DS_HW2.dir/CarType.cpp.obj
