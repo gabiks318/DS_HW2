@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/tests
+# Install script for directory: C:/Users/yan11/OneDrive/Desktop/Data Structures/DS_HW2/tests
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

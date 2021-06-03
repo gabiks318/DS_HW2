@@ -1,7 +1,3 @@
-//
-// Created by Gabriel on 03/06/2021.
-//
-
 #ifndef DS_HW2_CARSALES_H
 #define DS_HW2_CARSALES_H
 
@@ -10,7 +6,7 @@
 class CarSales: public CarType{
 public:
     CarSales(int typeId = -1, int sales = -1);
-    ~CarSales(){};
+    ~CarSales()= default;
     bool operator<(const CarSales&) const;
     CarSales(const CarSales&);
 };

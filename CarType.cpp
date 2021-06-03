@@ -3,6 +3,7 @@
 CarType::CarType(int type_id, int sales):type_id(type_id),sales(sales){
 
 }
+
 CarType::CarType(const CarType& car_type):type_id(car_type.type_id), sales(car_type.sales){
 
 }
@@ -17,7 +18,7 @@ CarType& CarType::operator=(const CarType& car_type){
 }
 
 bool CarType::operator<(const CarType& car_type) const {
-    return type_id < car_type.getTypeId();
+    return type_id < car_type.type_id;
 }
 
 bool CarType::operator==(const CarType& car_best_sells) const{

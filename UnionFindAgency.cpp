@@ -12,7 +12,8 @@ UnionFindAgency::UnionFindAgency():car_agencies(new CarAgency*[N * sizeof(CarAge
 
 UnionFindAgency::~UnionFindAgency(){
     for(int i = 0; i < curr_size; i++){
-        car_agencies[i]->sales_tree.empty();
+        //car_agencies[i]->sales_tree.empty();
+        //car_agencies[i]->type_tree.empty();
         delete car_agencies[i];
     }
     delete [] car_agencies;
@@ -99,7 +100,6 @@ void UnionFindAgency::UniteCarAgencies(int agency_1, int agency_2){
         car_agency2->sales_tree = merged_sales;
         car_agency2->tree_size = new_tree_size;
     }
-
 }
 
 //void UnionFindAgency::UniteCarAgencies(int agency_1, int agency_2){
