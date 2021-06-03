@@ -17,9 +17,6 @@ CarType& CarType::operator=(const CarType& car_type){
 }
 
 bool CarType::operator<(const CarType& car_type) const {
-    if(sales != car_type.sales) {
-        return sales < car_type.sales;
-    }
     return type_id > car_type.getTypeId();
 }
 
@@ -32,10 +29,15 @@ bool operator>(const CarType& car_type1, const CarType& car_type2){
     return car_type2 < car_type1;
 }
 
+
 int CarType::getTypeId() const{
     return type_id;
 }
 
 int CarType::getSales() const{
     return sales;
+}
+
+void CarType::setSales(int new_sales){
+    sales = new_sales;
 }

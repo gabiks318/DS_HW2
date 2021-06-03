@@ -1,6 +1,7 @@
 #ifndef DS_HW2_UNION_FIND_AGENCY_H
 #define DS_HW2_UNION_FIND_AGENCY_H
 
+#include "CarSales.h"
 #include "CarType.h"
 #include "AVLRankTree.h"
 
@@ -10,7 +11,9 @@ class UnionFindAgency{
         int agency_id;
         int tree_size;
         CarAgency *father;
-        AVLTree<CarType> types_tree;
+        AVLTree<CarSales> sales_tree;
+        AVLTree<CarType> type_tree;
+
     public:
         explicit CarAgency(int agency_id);
         ~CarAgency() = default;
@@ -31,5 +34,6 @@ public:
     void UniteCarAgencies(int agency_1, int agency_2);
     int GetIthSoldType(int agencyID, int i);
 };
+
 
 #endif //DS_HW2_UNION_FIND_H

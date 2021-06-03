@@ -2,7 +2,7 @@
 #define DS_HW2_CAR_TYPE_H
 
 class CarType {
-private:
+protected:
     int type_id;
     int sales;
 public:
@@ -13,6 +13,7 @@ public:
     bool operator<(const CarType&) const;
     bool operator==(const CarType&) const;
     int getSales() const;
+    void setSales(int new_sales);
     int getTypeId() const;
 };
 

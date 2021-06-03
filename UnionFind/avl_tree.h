@@ -1,5 +1,6 @@
-#ifndef MAIN_CPP_AVLRANKTREE_H
-#define MAIN_CPP_AVLRANKTREE_H
+
+#ifndef AVL_TREE_H
+#define AVL_TREE_H
 
 #include "exceptions.h"
 #include <iostream>
@@ -56,7 +57,6 @@ public:
     // Constructors, Destructor, Assignment
     AVLTree();
     AVLTree(const AVLTree<T>& tree);
-    AVLTree(const AVLTree<T>& tree1, const AVLTree<T>& tree2);
     AVLTree &operator=(const AVLTree<T> &tree);
     void sortedArrayInit(T data_arr[], int n);
     ~AVLTree();
@@ -102,41 +102,6 @@ template<class T>
 AVLTree<T>::AVLTree() : root(NULL), min(NULL), max(NULL), size(0) {
 }
 
-template<class T>
-AVLTree<T>::AVLTree(const AVLTree<T>& tree1, const AVLTree<T>& tree2): root(NULL), min(NULL), max(NULL), size(0){
-    AVLTree<T>::AvlIterator it1 = tree1.begin();
-    AVLTree<T>::AvlIterator it2 = tree2.begin();
-    int arr_size = tree1.size + tree2.size;
-    T* sorted_arr = new T[arr_size * sizeof(T)];
-    int index = 0;
-
-    while(it1 != tree1.end() && it2 != tree2.end()){
-        if(*(*it1) < *(*it2)){
-            sorted_arr[index] = *(*it1);
-            ++it1;
-        } else {
-            sorted_arr[index] = *(*it2);
-            ++it2;
-        }
-
-        index++;
-    }
-
-    while(it1 != tree1.end()){
-        sorted_arr[index] = *(*it1);
-        ++it1;
-        index++;
-    }
-
-    while(it2 != tree2.end()){
-        sorted_arr[index] = *(*it2);
-        ++it2;
-        index++;
-    }
-
-    sortedArrayInit(sorted_arr, arr_size);
-    delete[] sorted_arr;
-}
 template<class T>
 AVLTree<T>::~AVLTree(){
     empty();
@@ -630,4 +595,4 @@ typename AVLTree<T>::AvlIterator AVLTree<T>::end() const{
     return AvlIterator(NULL,NULL);
 }
 
-#endif //MAIN_CPP_AVLRANKTREE_H
+#endif //DS_HW1_AVL_TREE_H

@@ -4,13 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/yan11/OneDrive/Desktop/Data Structures/DS_HW2/CarAgenciesManager.cpp" "C:/Users/yan11/OneDrive/Desktop/Data Structures/DS_HW2/cmake-build-debug/CMakeFiles/DS_HW2.dir/CarAgenciesManager.cpp.obj"
-  "C:/Users/yan11/OneDrive/Desktop/Data Structures/DS_HW2/CarType.cpp" "C:/Users/yan11/OneDrive/Desktop/Data Structures/DS_HW2/cmake-build-debug/CMakeFiles/DS_HW2.dir/CarType.cpp.obj"
-  "C:/Users/yan11/OneDrive/Desktop/Data Structures/DS_HW2/UnionFindAgency.cpp" "C:/Users/yan11/OneDrive/Desktop/Data Structures/DS_HW2/cmake-build-debug/CMakeFiles/DS_HW2.dir/UnionFindAgency.cpp.obj"
-  "C:/Users/yan11/OneDrive/Desktop/Data Structures/DS_HW2/library.cpp" "C:/Users/yan11/OneDrive/Desktop/Data Structures/DS_HW2/cmake-build-debug/CMakeFiles/DS_HW2.dir/library.cpp.obj"
-  "C:/Users/yan11/OneDrive/Desktop/Data Structures/DS_HW2/main.cpp" "C:/Users/yan11/OneDrive/Desktop/Data Structures/DS_HW2/cmake-build-debug/CMakeFiles/DS_HW2.dir/main.cpp.obj"
+  "C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/CarAgenciesManager.cpp" "C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/cmake-build-debug/CMakeFiles/DS_HW2.dir/CarAgenciesManager.cpp.obj"
+  "C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/CarSales.cpp" "C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/cmake-build-debug/CMakeFiles/DS_HW2.dir/CarSales.cpp.obj"
+  "C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/CarType.cpp" "C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/cmake-build-debug/CMakeFiles/DS_HW2.dir/CarType.cpp.obj"
+  "C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/UnionFindAgency.cpp" "C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/cmake-build-debug/CMakeFiles/DS_HW2.dir/UnionFindAgency.cpp.obj"
+  "C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/library.cpp" "C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/cmake-build-debug/CMakeFiles/DS_HW2.dir/library.cpp.obj"
+  "C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/tests/avl_tests.cpp" "C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/cmake-build-debug/CMakeFiles/DS_HW2.dir/tests/avl_tests.cpp.obj"
   )
-set(CMAKE_CXX_COMPILER_ID "MSVC")
+set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
