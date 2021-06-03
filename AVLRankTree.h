@@ -64,6 +64,7 @@ public:
     // Interface Functions
     void insert(const T& data);
     T* find(const T& data);
+    bool exist(const T& data);
     T* select(int index) const;
     void remove(const T& data);
     int getHeight() const;
@@ -195,6 +196,14 @@ T* AVLTree<T>::find(const T& data){
     if(node == NULL)
         throw NodeDoesntExist();
     return node->data;
+}
+
+template<class T>
+bool AVLTree<T>::exist(const T& data){
+    Node* node = findNode(root, data);
+    if(node == NULL)
+        return false;
+    return true;
 }
 
 template<class T>

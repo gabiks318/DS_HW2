@@ -6,77 +6,39 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/yan11/OneDrive/Desktop/Data Structures/DS_HW2/AVLRankTree.h
+C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/AVLRankTree.h
 exceptions.h
-C:/Users/yan11/OneDrive/Desktop/Data Structures/DS_HW2/exceptions.h
+C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/exceptions.h
 iostream
 -
 
-C:/Users/yan11/OneDrive/Desktop/Data Structures/DS_HW2/CarAgenciesManager.cpp
-CarAgenciesManager.h
-C:/Users/yan11/OneDrive/Desktop/Data Structures/DS_HW2/CarAgenciesManager.h
+C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/CarSales.h
+CarType.h
+C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/CarType.h
 
-C:/Users/yan11/OneDrive/Desktop/Data Structures/DS_HW2/CarAgenciesManager.h
-library2.h
-C:/Users/yan11/OneDrive/Desktop/Data Structures/DS_HW2/library2.h
+C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/CarType.h
+
+C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/UnionFindAgency.cpp
 UnionFindAgency.h
-C:/Users/yan11/OneDrive/Desktop/Data Structures/DS_HW2/UnionFindAgency.h
-
-C:/Users/yan11/OneDrive/Desktop/Data Structures/DS_HW2/CarSales.cpp
+C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/UnionFindAgency.h
+CarType.h
+C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/CarType.h
 CarSales.h
-C:/Users/yan11/OneDrive/Desktop/Data Structures/DS_HW2/CarSales.h
-
-C:/Users/yan11/OneDrive/Desktop/Data Structures/DS_HW2/CarSales.h
-CarType.h
-C:/Users/yan11/OneDrive/Desktop/Data Structures/DS_HW2/CarType.h
-
-C:/Users/yan11/OneDrive/Desktop/Data Structures/DS_HW2/CarType.cpp
-CarType.h
-C:/Users/yan11/OneDrive/Desktop/Data Structures/DS_HW2/CarType.h
-
-C:/Users/yan11/OneDrive/Desktop/Data Structures/DS_HW2/CarType.h
-
-C:/Users/yan11/OneDrive/Desktop/Data Structures/DS_HW2/UnionFindAgency.cpp
-UnionFindAgency.h
-C:/Users/yan11/OneDrive/Desktop/Data Structures/DS_HW2/UnionFindAgency.h
-CarType.h
-C:/Users/yan11/OneDrive/Desktop/Data Structures/DS_HW2/CarType.h
-CarSales.h
-C:/Users/yan11/OneDrive/Desktop/Data Structures/DS_HW2/CarSales.h
+C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/CarSales.h
 iostream
 -
 
-C:/Users/yan11/OneDrive/Desktop/Data Structures/DS_HW2/UnionFindAgency.h
+C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/UnionFindAgency.h
 CarSales.h
-C:/Users/yan11/OneDrive/Desktop/Data Structures/DS_HW2/CarSales.h
+C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/CarSales.h
 CarType.h
-C:/Users/yan11/OneDrive/Desktop/Data Structures/DS_HW2/CarType.h
+C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/CarType.h
 AVLRankTree.h
-C:/Users/yan11/OneDrive/Desktop/Data Structures/DS_HW2/AVLRankTree.h
+C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/AVLRankTree.h
 
-C:/Users/yan11/OneDrive/Desktop/Data Structures/DS_HW2/exceptions.h
+C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/exceptions.h
 exception
 -
 new
 -
-
-C:/Users/yan11/OneDrive/Desktop/Data Structures/DS_HW2/library2.cpp
-library2.h
-C:/Users/yan11/OneDrive/Desktop/Data Structures/DS_HW2/library2.h
-CarAgenciesManager.h
-C:/Users/yan11/OneDrive/Desktop/Data Structures/DS_HW2/CarAgenciesManager.h
-
-C:/Users/yan11/OneDrive/Desktop/Data Structures/DS_HW2/library2.h
-
-C:/Users/yan11/OneDrive/Desktop/Data Structures/DS_HW2/main.cpp
-assert.h
--
-stdio.h
--
-stdlib.h
--
-string.h
--
-library2.h
-C:/Users/yan11/OneDrive/Desktop/Data Structures/DS_HW2/library2.h
 

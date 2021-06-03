@@ -2,7 +2,7 @@
 #include "CarType.h"
 #include "CarSales.h"
 #include <iostream>
-#define N 50
+#define N 2
 
 UnionFindAgency::UnionFindAgency():car_agencies(new CarAgency*[N * sizeof(CarAgency*)]) , max_size(N), curr_size(0) {
     for(int i = 0; i < N; i++){
@@ -27,9 +27,10 @@ void UnionFindAgency::AddCarAgency() {
         max_size *= 2;
         CarAgency **new_car_agencies = new CarAgency *[max_size * sizeof(CarAgency*)];
         for(int i = 0; i < max_size; i++) {
-            new_car_agencies[i] = NULL;
-            if (curr_size < i) {
+            if (i < curr_size) {
                 new_car_agencies[i] = car_agencies[i];
+            } else {
+                new_car_agencies[i] = NULL;
             }
         }
         delete[] car_agencies;
@@ -42,7 +43,7 @@ void UnionFindAgency::AddCarAgency() {
 }
 
 UnionFindAgency::CarAgency* UnionFindAgency::FindCarAgency(int agency){
-    if(car_agencies[agency] == NULL) {
+    if(agency > max_size ||car_agencies[agency] == NULL) {
         throw AgencyDoesntExists();
     }
     return findAux(car_agencies[agency]);
@@ -60,13 +61,11 @@ UnionFindAgency::CarAgency* UnionFindAgency::findAux(CarAgency* agency) {
 void UnionFindAgency::SellCar(int agency_id, int sales, int type_id) {
     CarAgency* car_agency = FindCarAgency(agency_id);
     CarType *car_type = NULL;
-    try {
-        car_type = car_agency->type_tree.find(CarType(type_id, 0));
-    } catch (NodeDoesntExist &e){
-        car_agency->type_tree.insert(CarType(type_id, sales)); //new car in agency
-        car_agency->sales_tree.insert(CarSales(type_id,sales));
-        car_type = car_agency->type_tree.find(CarType(type_id, sales));
+    if(!car_agency->type_tree.exist(CarType(type_id, 0))){
+        car_agency->type_tree.insert(CarType(type_id, 0)); //new car in agency
+        car_agency->sales_tree.insert(CarSales(type_id,0));
     }
+    car_type = car_agency->type_tree.find(CarType(type_id, sales));
 
     //updating car sales in agency
     int updated_sells = sales + car_type->getSales();
@@ -94,10 +93,12 @@ void UnionFindAgency::UniteCarAgencies(int agency_1, int agency_2){
     if(car_agency1->tree_size > car_agency2->tree_size){
         car_agency2->father = car_agency1;
         car_agency1->sales_tree = merged_sales;
+        car_agency1->type_tree = merged_types;
         car_agency1->tree_size = new_tree_size;
     } else {
         car_agency1->father = car_agency2;
         car_agency2->sales_tree = merged_sales;
+        car_agency2->type_tree = merged_types;
         car_agency2->tree_size = new_tree_size;
     }
 }
