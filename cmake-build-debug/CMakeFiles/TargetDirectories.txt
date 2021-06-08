@@ -1,5 +1,0 @@
-C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/cmake-build-debug/CMakeFiles/DS_HW2.dir
-C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/cmake-build-debug/tests/CMakeFiles/edit_cache.dir
-C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/cmake-build-debug/tests/CMakeFiles/rebuild_cache.dir

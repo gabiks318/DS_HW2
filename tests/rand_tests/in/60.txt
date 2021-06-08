@@ -1,0 +1,6 @@
+Init
+AddAgency
+AddAgency
+SellCar 0 4515 27
+SellCar 0 4515 22
+Quit
