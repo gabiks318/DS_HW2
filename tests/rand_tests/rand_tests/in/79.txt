@@ -1,6 +1,0 @@
-Init
-AddAgency
-GetIthSoldType -1 2
-AddAgency
-SellCar -4 1933 29
-Quit

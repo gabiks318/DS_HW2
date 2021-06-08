@@ -1,6 +1,0 @@
-init done.
-AddAgency: SUCCESS
-AddAgency: SUCCESS
-SellCar: SUCCESS
-SellCar: SUCCESS
-quit done.
