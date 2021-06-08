@@ -1,5 +1,0 @@
-init done.
-AddAgency: SUCCESS
-AddAgency: SUCCESS
-AddAgency: SUCCESS
-quit done.
