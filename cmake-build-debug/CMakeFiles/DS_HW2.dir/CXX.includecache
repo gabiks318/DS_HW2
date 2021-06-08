@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/library2.h
+
+C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/main.cpp
+assert.h
+-
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+library2.h
+C:/Users/Gabriel/Desktop/Technion/Programming Files/Data Structures/DS_HW2/library2.h
+

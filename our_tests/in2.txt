@@ -55,6 +55,7 @@ GetIthSoldType 7 5
 GetIthSoldType 2 1
 SellCar 10 55 25
 SellCar 8 43 1
+SellCar 6 15 32
 GetIthSoldType 4 7
 GetIthSoldType 5 3
 GetIthSoldType 1 13
@@ -85,14 +86,37 @@ GetIthSoldType 10 1
 GetIthSoldType 12 6
 GetIthSoldType 9 5
 GetIthSoldType 8 2
-GetIthSoldType 10 0
-GetIthSoldType 10 1
-GetIthSoldType 10 2
-GetIthSoldType 10 3
-GetIthSoldType 10 4
-GetIthSoldType 10 5
-GetIthSoldType 10 6
-GetIthSoldType 10 7
-GetIthSoldType 10 8
+GetIthSoldType 8 3
+UniteAgencies 9 6
+GetIthSoldType 8 0
+GetIthSoldType 6 1
+GetIthSoldType 1 2
+GetIthSoldType 11 3
+GetIthSoldType 0 4
+GetIthSoldType 5 5
+GetIthSoldType 9 6
+GetIthSoldType 2 7
+GetIthSoldType 3 8
+GetIthSoldType 7 9
+GetIthSoldType 4 10
+GetIthSoldType 10 11
+GetIthSoldType 12 12
+GetIthSoldType 8 13
+GetIthSoldType 6 14
+GetIthSoldType 1 15
+GetIthSoldType 11 16
+GetIthSoldType 0 17
+GetIthSoldType 5 18
+GetIthSoldType 9 19
+GetIthSoldType 2 20
+GetIthSoldType 3 21
+GetIthSoldType 7 22
+GetIthSoldType 4 23
+GetIthSoldType 10 24
+GetIthSoldType 12 25
+GetIthSoldType 11 26
+GetIthSoldType 0 27
+GetIthSoldType 5 28
+GetIthSoldType 15 13
 Quit
 
