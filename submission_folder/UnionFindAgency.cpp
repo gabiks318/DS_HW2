@@ -43,7 +43,7 @@ void UnionFindAgency::AddCarAgency() {
 }
 
 UnionFindAgency::CarAgency* UnionFindAgency::FindCarAgency(int agency){
-    if(agency > max_size ||car_agencies[agency] == NULL) {
+    if(agency >= max_size || car_agencies[agency] == NULL) {
         throw AgencyDoesntExists();
     }
     return findAux(car_agencies[agency]);
